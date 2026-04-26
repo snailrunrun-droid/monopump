@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MonoPump - Heart Rate Monitor</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #1d1d1f;
+            background: #ffffff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 100px 0 80px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+            opacity: 0.95;
+        }
+        .download-btn {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 16px 40px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+        }
+        /* Features Section */
+        .features {
+            padding: 80px 0;
+            background: #f5f5f7;
+        }
+        .features h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 60px;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+        }
+        .feature-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .feature-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+        }
+        .feature-card p {
+            color: #6e6e73;
+        }
+        /* Screenshots Section */
+        .screenshots {
+            padding: 80px 0;
+            background: white;
+        }
+        .screenshots h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 60px;
+        }
+        .screenshots-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        .screenshot-item {
+            background: #f5f5f7;
+            border-radius: 20px;
+            padding: 20px;
+            text-align: center;
+            aspect-ratio: 9/19.5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .screenshot-item img {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 10px;
+        }
+        /* CTA Section */
+        .cta {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        .cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .cta p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+        /* Footer */
+        footer {
+            background: #1d1d1f;
+            color: #86868b;
+            padding: 40px 0;
+            text-align: center;
+        }
+        footer a {
+            color: #a1a1a6;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        footer a:hover {
+            color: #ffffff;
+        }
+        .footer-links {
+            margin-bottom: 20px;
+        }
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .hero p {
+                font-size: 1.2rem;
+            }
+            .features h2, .screenshots h2, .cta h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>MonoPump</h1>
+            <p>Your Personal Heart Rate Monitor</p>
+            <a href="https://apps.apple.com" class="download-btn" target="_blank">Download on App Store</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2>Why Choose MonoPump?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Quick Measurement</h3>
+                    <p>Get accurate heart rate readings in seconds using just your iPhone camera. Simple and fast.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Health Analysis</h3>
+                    <p>View detailed charts and understand your heart rate trends over time with professional insights.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📤</div>
+                    <h3>Data Export</h3>
+                    <p>Export your data in multiple formats - PDF, Excel, and HTML. Share easily with doctors.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3>Multi-user Support</h3>
+                    <p>Create separate profiles for family members. Everyone can track their heart health individually.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌍</div>
+                    <h3>Multi-language</h3>
+                    <p>Supports English, Simplified Chinese, Japanese, and Korean. For users worldwide.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Privacy First</h3>
+                    <p>All data stays on your device. Your health information is private and secure.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section class="screenshots">
+        <div class="container">
+            <h2>App in Action</h2>
+            <div class="screenshots-grid">
+                <div class="screenshot-item">
+                    <div style="color: #86868b;">Home Screen</div>
+                </div>
+                <div class="screenshot-item">
+                    <div style="color: #86868b;">Measurement</div>
+                </div>
+                <div class="screenshot-item">
+                    <div style="color: #86868b;">Health Analysis</div>
+                </div>
+                <div class="screenshot-item">
+                    <div style="color: #86868b;">Data Export</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Start Your Heart Health Journey Today</h2>
+            <p>Download MonoPump and take control of your heart health.</p>
+            <a href="https://apps.apple.com" class="download-btn" target="_blank">Download Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="support.html">Support</a>
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+            </div>
+            <p>© 2024 MonoPump. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
